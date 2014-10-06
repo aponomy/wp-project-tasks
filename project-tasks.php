@@ -40,6 +40,8 @@ require_once("files/project-tasks-general.php");
 
 require_once("files/project-tasks-list.php");
 
+require_once("files/project-tasks-public.php");
+
 // require_once("files/project-tasks-process.php");
 
 
@@ -85,6 +87,8 @@ if (!class_exists("project_tasks")) {
 			$this->ajax 		= new project_tasks_ajax ();
 			
 			$this->data 		= new project_tasks_data ();
+			
+			$this->public 		= new project_tasks_public ();
 
 
 			///////////////////////////////////////////////////////
@@ -143,6 +147,7 @@ if (!class_exists("project_tasks")) {
 	} //End Class
 }
 
+global $project_tasks;
 
 if (class_exists("project_tasks")) { $project_tasks = new project_tasks(); }
 
