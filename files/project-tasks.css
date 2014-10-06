@@ -1,0 +1,308 @@
+
+
+/* GENERAL */
+.clear										{ clear:both; }
+.how_to										{ margin: 0px 20px 10px 20px; font-size: 11px; color: #666666; font-family: "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif; font-style: italic; line-height: 140%; }
+.spt_hidden									{ display: none; }
+.sptask_edit_page_content *						{ padding: 0px; xmargin: 0px; font-family: "Lucida Grande",Verdana,Arial !important; font-size: 12px !important; }
+.align_left									{ float: left; }
+.disabled										{ color: #bbb !important; }
+
+
+/*	PROJECT TASK LIST GENERAL	*/
+
+.project_tasks_list								{ padding: 0px; background-color: #f9f9f9; }
+.project_tasks_list *							{ color: #333 !important; }
+.project_tasks_list table 						{  }
+.project_tasks_list thead td						{ padding: 0px; padding-left: 10px !important; white-space: nowrap; height: 30px; color: #000; font-weight: bold !important; padding-left: 10px; border-bottom: 1px solid #999; border-left: 1px solid #eee; background-color: #eaeaea; font-size: 12px; }
+.project_tasks_list tbody td						{ background-color: #f9f9f9; padding-left: 10px; color: #555 !important; font-size: 12px !important; border-left: 1px solid #fdfdfd; border-bottom: 1px solid #eee; white-space:nowrap; overflow: hidden;}
+.project_tasks_list .spt_task_row td				{ cursor:pointer; cursor:hand; height: 30px; }
+.project_tasks_list tr.spt_task_row:hover td			{ background-color: #fdfdfd; border-left: 1px solid #fafafa; border-bottom: 1px solid #eee;}
+.project_tasks_list tr.spt_task_type_row td			{ background-color: #ccc; height: 24px !important; border-left: 0px; font-weight: bold !important; font-size: 10px !important; }
+
+.project_tasks_list .spt_title					{ width: 290px; }
+.project_tasks_list .spt_assigned_to				{ width: 90px !important; }
+.project_tasks_list .spt_targets					{ width: 80px !important; }
+.project_tasks_list .spt_progress					{ width: 60px !important; }
+.project_tasks_list .spt_status					{ width: 80px !important; }
+.project_tasks_list .spt_due_date					{ width: 80px !important; }
+.project_tasks_list .spt_creator					{ width: 90px !important; }
+.project_tasks_list .spt_priority					{ width: 60px !important; }
+
+.spt_task_status_CLOSED td						{ text-decoration: line-through; background-color: #e7e7e7 !important; }
+
+.project_tasks_list .spt_subtaskslist	td			{ padding-left: 30px; background-color: #555; }
+.project_tasks_list .spt_subtaskslist	td span		{ border-right: 1px solid #ddd; cursor:pointer; cursor:hand; padding: 0px 10px; color: #ddd !important; }
+
+
+
+
+/*PROJECT TASKS LIST IN ADMIN BAR */
+
+#wp-admin-bar-project_tasks *						{ text-shadow: none !important;  }
+#wp-admin-bar-project_tasks ul					{ position: relative;  width:680px; }
+#wpadminbar .project_tasks_list					{ width: 680px !important; }
+#wp-admin-bar-project_tasks .ab-submenu				{ padding-top: 0px; padding-bottom: 0px; }
+#wp-admin-bar-project_tasks .ab-sub-wrapper			{ position: relative; width:680px; left: -120px;}
+#wpadminbar .project_tasks_list .spt_title			{ width: 290px; }
+#wpadminbar .project_tasks_list tbody td			{ padding-left: 3px; }
+
+/*	PROJECT TASKS LIST IN ADMIN VIEW 	*/
+#wpbody .project_tasks_list						{ width: inherit !important; border-top: 1px solid #eee; margin-top: 10px; }
+#wpbody .project_tasks_list table 					{ width: 100%; border-left: 1px solid #eee; border-right: 1px solid #eee; }
+#wpbody .project_tasks_list .spt_title				{ width: inherit; border-left: 0px; } 
+#wpbody .project_tasks_list .spt_title:hover			{ text-decoration: underline; }
+.project_tasks_list 
+	.spt_subtaskslist td span:hover				{ text-decoration: underline; }
+#wpbody .project_tasks_list .spt_status				{ border-right: 0px !important; } 
+#wpbody .project_tasks_list .spt_status				{ border-right: 1px solid #eee; } 
+ 
+ 
+ 
+ /*	PROJECT TASKS LIST IN FORM VIEW 	*/
+ 
+#TB_window .project_tasks_list					{ width: 510px; }
+#TB_window .project_tasks_list .spt_title			{ width: 307px; }
+
+
+#project_tasks_list .spt_targets span,
+#spt_number_of_list_items_span					{ background: none repeat scroll 0 0 #EEEEEE; border-radius: 10px 10px 10px 10px; color: #333333; display: inline; font-size: 10px; font-weight: bold; padding: 2px 5px; text-shadow: none; }
+#project_tasks_list .spt_targets span				{ margin-right: 2px; }
+
+.spt_action_buttons								{ padding: 10px 10px 12px 10px !important; xheight: 20px !important; background-color: #fff; border-top: 1px solid #ddd; }
+/*.spt_action_button								{ line-height: 15px;
+    											  padding: 4px 10px !important; white-space: nowrap !important; background: url("/wp-admin/images/white-grad.png") repeat-x scroll left; text-shadow: 0 1px 0 #FFFFFF !important; border-color: #BBBBBB;
+    											  color: #000; -moz-box-sizing: content-box; border-radius: 11px 11px 11px 11px; border-style: solid; border-width: 1px; cursor: pointer; font-size: 11px !important; text-decoration: none;
+    											  margin: 0; outline: 0 none; font-family: "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif; }*/
+
+.spt_action_button								{ background: none repeat scroll 0 0 #F7F7F7; border-color: #CCCCCC; box-shadow: 0 1px 0 #FFFFFF inset, 0 1px 0 rgba(0, 0, 0, 0.08); color: #555555; vertical-align: top; -moz-box-sizing: border-box; border-radius: 3px; border-style: solid; border-width: 1px; cursor: pointer; display: inline-block; font-size: 13px; height: 28px; ine-height: 26px; padding: 3px 10px 1px !important; text-decoration: none; white-space: nowrap; }
+    
+.spt_action_button.spt_button_primary				{ background: none repeat scroll 0 0 #2EA2CC; border-color: #0074A2; box-shadow: 0 1px 0 rgba(120, 200, 230, 0.5) inset, 0 1px 0 rgba(0, 0, 0, 0.15); color: #FFFFFF; text-decoration: none; }
+    											  
+.spt_action_button.disabled						{ color: #aaa; }
+
+#wp-admin-bar-project_tasks_content 
+	.spt_action_buttons 						{ background-color: #f9f9f9; }
+#wp-admin-bar-project_tasks_content 
+	.spt_action_button							{ line-height: 22px; } 
+#spt_action_alts								{ float: right; margin-top: 10px; }
+
+#spt_action_altchecks,  #spt_action_altdrop			{ height: 20px !important; float: right; position: relative; top: -10px; margin-left: 20px; }
+#spt_action_altchecks label						{ xmargin-bottom: 3px !important; display: block; line-height: 16px; }
+#spt_action_altchecks label input					{ margin-right: 3px; }
+ 
+#spt_list_pagination							{ position: relative; top: -10px; }
+#spt_list_pagination span						{ width: 10px; height: 10px; border: 1px solid #aaa; display: inline-block; padding: 4px; text-align: center; line-height: 12px; font-size: 10px; margin-right: 4px; cursor: pointer; cursor:hand; }
+#spt_list_pagination span.active					{ font-weight: bold; background-color: #EAEAEA; cursor: default; }
+#spt_list_pagination span:hover					{ text-decoration: underline; }
+#spt_list_pagination span.active:hover				{ text-decoration: none; }
+
+#project_tasks_list .spt_list_selected td			{ background-color: #777; color: #fff !important; }
+ 	
+
+ 
+ 
+
+/* PROJECT TASK EDIT IN THICKBOX */ 
+#TB_window									{ z-index: 999999 !important; }
+#wpadminbar .quicklinks ul li						{ z-index: 99998 !important; }
+
+
+
+
+
+/* PROJECT TASK EDIT FORM */ 
+#theme_project_tasks_edit						{ margin: 0px; padding: 0px; position: relative; font-family: "Lucida Grande",Verdana,Arial !important; font-size: 12px !important; }
+
+.spt_fieldrow									{ vertical-align: top; xfont-family: Arial,Helvetica,sans-serif !important; xfont-size: 13px !important; position: relative; width: 530px; xborder-bottom: 1px solid #eee; padding: 10px 10px;}
+.spt_fieldrow label								{ vertical-align: top;  }
+.spt_fieldrow input, 
+.spt_fieldrow textarea,
+.spt_fieldrow select							{ border-radius: 0 !important; xpadding: 2px !important; border: 1px solid #000 !important; }
+.spt_fieldrow input, 
+.spt_fieldrow textarea							{ -moz-box-sizing: content-box !important; }
+.spt_fieldrow input								{ position: absolute; left: 120px; width: 320px; border: 1px solid #000; vertical-align: bottom; padding-left: 2px;  }
+.spt_fieldrow textarea							{ position: absolute; left: 120px; width: 420px; height: 120px; border: 1px solid #000; vertical-align: bottom; float: left; padding: 2px; }
+.spt_fieldrow select							{ position: absolute; left: 120px; height: 26px; padding: 4px; }
+.spt_fieldrow input[type=text] 					{ height: 22px !important; }
+.spt_fieldrow input[name=sptask_title] 				{ width: 230px; padding-left: 4px !important; }
+.spt_fieldrow input[name=sptask_progress]			{ width: 23px; text-align: right; padding-right: 3px; left: 70px; }
+.spt_fieldrow select[name=sptask_tasktype]			{ width: 235px; }
+.spt_fieldrow select[name=sptask_relation]			{ width: 420px; }
+.spt_fieldrow select[name=sptask_taskassignedto]		{ width: 235px; xleft: 0px; xtop: 24px; }
+.spt_fieldrow textarea[name=sptask_description]		{ height: 120px; resize: none; }
+.spt_fieldrow textarea[name=sptask_notes]			{ height: 120px; resize: none; left: 10px; width: 540px; height: 300px;}
+.spt_fieldrow select[name=sptask_priority]			{ width: 102px; left: 70px; border: 2px solid #a00;}
+.spt_fieldrow .spt_read_only_field					{ position: absolute; left: 120px; top: 10px; }
+.spt_fieldrow .spt_change_read_only				{ font-size: 10px !important; margin-left: 6px; border-bottom: 1px dotted #000; position: relative; top: -2px; cursor: pointer; cursor:hand; color: #555;}
+#sptask_priority_readonly						{ left: 70px; top: 0px; }
+
+#spt_parent_task_info							{ position: relative; left: -15px; top: -5px; background-color: #aaa; font-weight: bold; padding: 5px 23px; width: 544px; }
+#spt_parent_task_info span						{ cursor:pointer; cursor:hand; }
+#spt_subtasks_info								{ position: relative; left: -15px; top: -5px; background-color: #aaa; font-weight: bold; padding: 5px 23px; width: 544px; cursor:pointer; cursor:hand;}
+
+.spt_resource_wrapper							{ position: absolute; left: 370px; top: -14px; font-size: 11px; }
+
+.spt_fieldrow div.created_by						{ position: absolute; left: 70px; font-size: 11px; width: 120px; top: 0px; overflow: hidden;  }
+.spt_fieldrow div.created_date					{ position: absolute; left: 70px; font-size: 11px; width: 120px; top: 14px; color: #aaa; overflow: hidden; display: none;  }
+.spt_fieldrow label.small_label					{ font-size: 11px; }
+
+.spt_fieldrow.bottom_border						{ border-bottom: 1px solid #eee; padding-bottom: 20px; }
+.spt_secondfield								{ position: absolute; left: 370px; top: 10px;} 
+.spt_secondfield.small_font						{ top: 12px; }
+#spt_complete_button							{ position: absolute; left: 14px; top: -3px; }
+#sptask_progress_percent							{ position: absolute; left: 103px; top: 4px; }
+
+.spt_datespanner								{ position: absolute; top: 0px; height: 24px; border: 1px solid #000; xpadding-left: 2px; background-color: #fff; font-size: 14px; padding-left: 5px; }
+.spt_datespanner span							{ position: relative; top: -5px; left: 0px;  padding: 0px 2px;}
+.spt_datespanner input[type=text] 					{ border: 0px !important; position: relative; top: 0px; height: 20px !important; background: none !important; padding-left: 0px !important; }
+.spt_datespanner input[type=text].spt_date_day		{ width: 20px; left: 2px; }
+.spt_datespanner input[type=text].spt_date_month		{ width: 20px; left: 0px; }
+.spt_datespanner input[type=text].spt_date_year		{ width: 30px; left: 0px; }
+.spt_secondfield .spt_datespanner					{ left: 70px; width: 100px; }
+
+#spt_edit_buttons								{ padding: 5px 30px 10px 10px; height: 22px; position: absolute; background-color: #f1f1f1; border-top: 1px solid #eaeaea; top: 452px; left: 0px; width: 550px; }
+#spt_edit_buttons div#spt_status					{ position: absolute; left: 30px; font-size: 12px; width: 145px; top: 14px; overflow: hidden; font-weight: bold; }
+#spt_edit_buttons span							{ float: right; margin-left: 10px; }
+#spt_edit_buttons span#spt_previous_task			{ position: absolute; left: 25px; }
+#spt_edit_buttons span#spt_next_task				{ position: absolute; left: 95px; }
+
+.sptask_form_message							{ position: absolute; top: 3px; left: 136px; width: 404px;  background-color: #fbfbda; font-size: 10px; font-weight: bold; padding: 2px 10px; font-family: "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;}
+#TB_ajaxContent								{ xpadding: 0px !important; background-color: #F9F9F9;}
+
+.spt_readonly_field								{ position: absolute; left: 120px; width: 320px; border: 1px solid #000; vertical-align: bottom; padding: 3px; height: 16px; background-color: #f1f1f1; font-size: 12px; }
+.sptask_parent_task								{ width: 200px; position: absolute; top: 10px;  }
+#spt_select_parent_task_button					{ position: absolute; left: 340px; }
+#spt_clear_parent_task_button						{ position: absolute; left: 400px;  }
+#spt_add_relation_to_other_task					{ position: absolute; left: 350px; top: 250px; display: block; width: 180px; text-align: center;}
+#spt_cancel_task								{ width: 80px; text-align: center; }
+#spt_save_task									{ width: 80px; text-align: center; font-weight: bold; }
+
+#sptask_log_field								{ position: absolute; border: 1px solid #000; padding: 2px; left: 10px; top: 10px; width: 540px; height: 320px; overflow: auto; font-size: 10px; background-color: #ededed; }
+
+
+/* PAGE AND TABS */
+.sptask_edit_page_tabs 							{ padding-left: 15px; padding-top: 10px;  background-color: #fff; position: absolute; top: 26px; left: 0px; width: 574px; }
+.sptask_edit_page_tabs a							{ float:left; position: relative; top: 1px; font-size:13px; line-height:1.4em; text-decoration: none;-moz-border-radius:3px 3px 0 0; border-style:solid; border-width:1px; cursor:pointer; height:18px; margin:6px 5px 0 0; padding:4px 5px 2px; background-color:#F1F1F1; border-color:#DFDFDF; color:#999999;}
+.sptask_edit_page_tabs a.active 					{ background-color:#F9F9F9; border-bottom-color:#F9F9F9; color:#333333; }
+.sptask_edit_page_content						{ position: relaltive; background-color:#F9F9F9; padding-top: 20px; width: 560px; height: 345px;} 
+
+.sptask_edit_page								{ display: none; position: relative; left: 0px; top: 40px; width: 560px; }
+.sptask_edit_page.active							{ display: block; }
+
+#sptask_url									{ width: 400px; }
+
+
+
+
+/* 	RELATIONS 	*/
+.spt_relations_field							{ background-color: #fff; border: 1px solid #ddd; width: 525px; height: 300px; overflow-y: scroll; overflow-x: auto; margin: 10px 20px 0px 20px; position: absolute; top: 30px; }
+.spt_relations_field table						{ font-size: 12px; width: 100% }
+.spt_relations_field table thead					{ position: absolute; }
+.spt_relations_field table thead td				{ font-weight: normal !important; font-size: 12px !important; padding: 0px; height: 20px !important; color: #000; font-weight: bold; padding-left: 10px; border-bottom: 1px solid #ddd; border-left: 1px solid #eee; background: #F9F9F9 url("/wp-admin/images/white-grad.png"); }
+.spt_relations_field table td.spt_rtd_1				{ width: 40px; }
+.spt_relations_field table td.spt_rtd_2				{ width: 100px; }
+.spt_relations_field table td.spt_rtd_3				{ width: 337px; }
+.spt_relations_field tbody td.spt_rtd_1				{ padding-left: 20px;  }
+.spt_relations_field tbody td						{ padding: 4px 0px 2px 10px; }
+.spt_relations_field .spt_row_description td			{ border-bottom: 1px solid #f3f3f3; font-size: 10px; font-style: italic; color: #aaa; padding: 0px 4px 6px 70px; }
+.spt_relations_field table tr.spt_task_type_row td	{ background-color: #777; color: #f1f1f1; height: 18px; padding: 0px 10px; border-left: 0px; font-size: 10px;  }
+.spt_relations_field tbody tr.spt_r_firstrow td		{ padding-top: 22px !important; }
+
+#spt_relation_description_area					{ padding: 0px 20px; font-family: Arial,Helvetica,sans-serif; font-size: 13px; position: relative; top: 16px; }
+#sptask_relation_description						{ width: 525px; height: 54px; resize: none; border: 1px solid #ddd; margin: 6px 0px 0px 0px;}
+
+.spt_relations_field table .spt_row_PT td			{ background-color: #f6fef6; }
+.spt_relations_field table .spt_row_C td			{ background-color: #fefef6; }
+.spt_relations_field table .spt_row_P td			{ background-color: #fefaf6; }
+.spt_relations_field table .spt_row_S td			{ background-color: #f6fefe; }
+.spt_relations_field table .spt_row_T td			{ background-color: #f7f6fe; }
+.spt_relations_field table .spt_row_X td			{ background-color: #fef6fd; }
+
+
+
+
+
+/*	SUB TASKS	*/
+.spt_sub_target_field							{ height: 250px; }
+.spt_sub_target_field table td					{ overflow: hidden }
+.spt_sub_target_field table td.spt_rtd_4			{ width: 215px; }
+.spt_sub_target_field table td.spt_rtd_5			{ width: 60px; }
+.spt_sub_target_field table td.spt_rtd_6			{ width: 90px; }
+.spt_sub_target_field table td.spt_rtd_7			{ width: 100px; }
+
+
+.spt_sub_tasks_buttons							{ padding: 10px 20px 25px 20px; }
+#spt_add_new_subtask_button						{ float: left; width: 120px; text-align: center; }
+#spt_delete_subtask_button						{ float: right; margin-right: 10px; }
+#spt_edit_subtask_button							{ float: right; font-weight: bold; width: 60px; text-align: center; }
+#spt_make_to_subtask							{ float: left; margin-right: 10px; width: 120px; text-align: center; }
+
+
+
+/*	ACTIONS	*/
+/*.spt_action_do								{ border: 1px solid #ddd; padding: 16px 26px 16px 26px; width: 508px; position: relative; top: -10px; }
+.spt_action_status								{ padding: 0px 10px; background-color: #ddd; font-size: 14px; height: 30px; line-height: 30px; position: relative; top: -16px; left: -26px; width: 540px; }
+.spt_action_respons								{ font-size: 13px !important; margin-top: 10px; color: #000; line-height: 20px; height: 60px; overflow: hidden; }
+.spt_action_do label							{ position: relative; width: 120px; display: inline-block; margin-bottom: 4px; }
+.spt_action_do select							{ position: relative; padding: 3px; }
+.spt_action_do textarea							{ -moz-box-sizing: content-box !important; width: 500px; height: 100px; border: 1px solid #000; vertical-align: bottom; padding: 2px; }
+.spt_action_respons_fields						{ margin-top: 10px; }
+.spt_action_respons_buttons						{ padding: 20px 0px 10px 0px; }
+#sptask_action_email							{ width: 190px; padding-left: 4px !important; }
+#sptask_action_sendto							{ width: 180px !important; }
+#sptask_new_action_type							{ width: 380px; }
+.sptask_new_action_type_description				{ margin-left: 126px; font-size: 11px; padding: 4px; height: 30px; }
+#sptask_action_email_copy_span					{ font-size: 11px; }
+#sptask_action_email_copy						{ margin-left: 50px; margin-right: 4px; }
+*/
+
+
+
+.spt_process_objects							{ list-style: none; position: relative; }
+
+.spt_process_objects a							{ text-decoration: none; color: #444; text-shadow: 0 1px 0 rgba(255,255,255,.5); }
+
+.spt_process_objects > li						{ position: absolute; z-index: 2; }
+
+.spt_process_objects > li.spt_deliverable			{ xdisplay: none; } 
+											 /* transition: 0.1s; -moz-transition: 0.1s; -webkit-transition: 0.1s; -o-transition: 0.1s; }*/
+/*
+.spt_process_objects > li.xspt_activity,
+.spt_process_objects > li.spt_deliverable:before		{ box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2); -moz-box-shadow: 2px 2px 4px 2px #aaa; -webkit-box-shadow: 2px 2px 4px 2px #EEEEEE; }
+
+.spt_process_objects > li.spt_activity				{ font-size: 10px; border-bottom: 1px solid #bbb; width: 120px; height: 80px; position: relative; border: 4px solid #c2e1f5;
+									       	background-color: #fbfbfb; background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fbfbfb), to(#EBEBEB)); background: -webkit-linear-gradient(top, #fbfbfb, #EBEBEB); 
+									       	background: -moz-linear-gradient(top, #f8f8f8, #EBEBEB); background: -ms-linear-gradient(top, #fbfbfb, #EBEBEB); background: -o-linear-gradient(top, #fbfbfb, #EBEBEB); }
+
+.spt_process_objects > li.spt_activity:after,
+.spt_process_objects > li.spt_activity:before		{ left: 100%; top: 50%; border: solid transparent; content: " "; height: 0px; width: 0px; position: absolute; pointer-events: none; } 
+
+.spt_process_objects > li.spt_activity:after 		{ border-color: rgba(136, 183, 213, 0); border-left-color: #88b7d5; border-width: 40px; margin-top: -40px; } 
+.spt_process_objects > li.spt_activity:before 		{ border-color: rgba(194, 225, 245, 0); border-left-color: #c2e1f5; border-width: 46px; margin-top: -46px; }
+*/
+
+.spt_process_objects > li.spt_deliverable a			{ display: table-cell; text-align: center; vertical-align: middle; width: 80px;padding-top: 32px; }
+
+.spt_process_objects > li.spt_deliverable a:before	{ content: ''; display: block; width: 30px; height: 30px; border: 2px solid #000; position: relative; left: 23px; 
+											background-color: #fbfbfb; background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3867ff), to(#5179fa)); background: -webkit-linear-gradient(top, #3867ff, #5179fa); 
+									       	background: -moz-linear-gradient(top, #3867ff, #5179fa); background: -ms-linear-gradient(top, #3867ff, #5179fa); background: -o-linear-gradient(top, #3867ff, #5179fa); }
+
+
+.spt_process_objects 							{ background: #F1F1F1; }
+
+.spt_process_objects .spt_activity a 				{ padding: .7em 1em .7em 2em; position: relative;  
+											  background-color: #ddd; background-image: linear-gradient(to right, #F1F1F1, #ddd);  display: table-cell; vertical-align: middle; text-align: center; height: 85px;  width: 100px;  }
+
+.spt_process_objects .spt_activity a:hover			{ background: #fff; }
+
+.spt_process_objects .spt_activity a::after,
+.spt_process_objects .spt_activity a::before			{ border-bottom: 4em solid rgba(0, 0, 0, 0); border-left: 1.5em solid; border-top: 4em solid rgba(0, 0, 0, 0); content: ""; margin-top: -1.5em; position: absolute; right: -1.4em; top: 1.5em; }
+
+.spt_process_objects .spt_activity a::after			{ z-index: 2; border-left-color: #ddd; }
+
+.spt_process_objects .spt_activity a::before			{ border-left-color: #ccc;   right: -1.45em; z-index: 1; }
+
+.spt_process_objects .spt_activity a:hover::after		{ border-left-color: #fff; }
+
+
